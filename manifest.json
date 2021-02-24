@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Linkster",
+  "version": "1.0.0.0",
+  "description": "Grab Links on any web page",
+
+  "icons": {
+    "16" : "assets/images/icon-16x16.png",
+    "48" : "assets/images/icon-48x48.png",
+    "128" : "assets/images/icon-128x128.png"
+  },
+
+  "background": { 
+    "scripts": ["assets/js/jquery-3.5.1.min.js"]
+	},
+  
+  "browser_action": {
+	"default_icon": "assets/images/icon-128x128.png",
+	"default_popup": "background.html"
+  },
+
+  "permissions": [ "tabs", "bookmarks",  "background", "browsingData", "history", "notifications" ],
+  "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["assets/js/content.js"],
+        "run_at": "document_end" 
+      } 
+    ]
+
+}
