@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+	#container{
+		width: 450px;
+		margin: 0 auto;
+		height: 350px;
+		position: relative;
+		width: 400px
+	}
+	.input{
+		border-radius: 5px;
+		background: transparent;
+		color: white !important;
+		display: block
+	}
+
+
+	.application-outlet {
+		margin-left: 140px;
+	}
+	.linkster-sidebar {
+		width: 120px;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		padding: 10px 10px 0 10px;
+		background-color: #ffffff;
+		box-sizing: border-box;
+		z-index: 99998;
+		transform:translateX(-120px);
+		box-shadow: 0 0 12px -4px rgb(0 0 0 / 20%);
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+
+	}
+	.linkster-sidebar.active {
+		transform:translateX(0);
+	}
+	.linkster-sidebar  .sidebar-handle{
+		position: absolute;
+		transform: translateX(120px);
+		left: 0;
+		bottom: 0;
+		width: 30px;
+		height: 30px;
+		background-color: #283e4a;
+		cursor: pointer;
+		z-index: 99999;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+	}
+	.linkster-sidebar.active  .sidebar-handle{
+		transform:translateX(120px);
+	}
+	.linkster-sidebar  .sidebar-handle:before{
+		content: "";
+		display: block;
+		box-sizing: border-box;
+		margin: 5px;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #ffffff;
+		border-radius: 50%;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+	}
+	.linkster-sidebar .linkster-group {
+		margin-bottom: 10px;
+		border-bottom: 1px solid #e8e8e8;
+	}
+	.linkster-sidebar .aione-button{
+	    background-color: #283e4a;
+	    color: #ffffff;
+	    padding: 4px;
+	    margin: 0 0 10px 0;
+	    border-radius: 4px;
+	    width: 100%;
+	    display: block;
+	    font-size: 12px;
+	    line-height: 22px;
+	    text-align: center;
+	    box-sizing: border-box;
+		-webkit-transition: all 200ms ease-in-out;
+		-moz-transition: all 200ms ease-in-out;
+		-o-transition: all 200ms ease-in-out;
+		transition: all 200ms ease-in-out;
+	}
+	.linkster-sidebar .aione-button:hover{
+		background-color: #0077b5;
+		color: #ffffff;
+	}
+	.linkster-sidebar .linkster-title,
+	.linkster-sidebar .linkster-subtitle{
+		color: #d8d8d8;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.linkster-sidebar .linkster-title{
+		font-size: 15px;
+		line-height: 30px;
+	}
+	.linkster-sidebar .linkster-subtitle{
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.linkster-sidebar .linkster-title:hover,
+	.linkster-sidebar .linkster-subtitle:hover{
+		color:#ED6F1D;
+	}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div id="main">
+	<div id="container">
+		<div>popup.html</div>
+		<div id="title">Linkster</div>
+		<div id="linkedin_console">
+			<button value="HELLO CONSOLE" >HELLO CONSOLE</button>
+		</div>
+
+		<div class="linkster-sidebar">
+		 	<div class="sidebar-handle"></div>
+			<div class="auto-linkedin-group">
+				<a class="aione-button linkster-grab-links" title="Grab Links" href="#">Grab Links</a>
+				<a class="aione-button linkster-grab-gomains" title="Grab Domains" href="#">Grab Domains</a>
+				<a class="aione-button linkster-send-links" title="Send Links" href="#">Send Links</a>
+				<a class="aione-button linkster-send-gomains" title="Send Domains" href="#">Send Domains</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
